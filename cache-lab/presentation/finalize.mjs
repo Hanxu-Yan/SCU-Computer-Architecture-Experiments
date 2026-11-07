@@ -7,21 +7,21 @@ const {finalizePresentation}=await import(pathToFileURL(path.join(skill,"contain
 const result=await finalizePresentation({
  workspaceDir,
  candidatePath:path.join(workspaceDir,"build/candidate.pptx"),
- finalPath:path.join(workspaceDir,"output/Cache映射与替换策略_小组实验.pptx"),
+ finalPath:process.argv[2] ?? path.join(workspaceDir,"output/Cache映射与替换策略_小组实验.pptx"),
  pythonExecutable:"/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
  integrityValidatorPath:path.join(skill,"container_tools/inspect_presentation_package_integrity.py"),
  layoutValidatorPath:path.join(skill,"container_tools/inspect_presentation_layout_geometry.py"),
- explicitTotalSlideCount:16,
+ explicitTotalSlideCount:18,
  layoutArgs:["--expected-slide-size-emu","12192000,6858000","--validate-heading-fit","--validate-bullet-geometry",
-  ...[2,3,4,5,15].flatMap(n=>["--require-native-table-slide",String(n)])],
- requiredNativeTableOwnerSlides:[2,3,4,5,15],
- requiredNativeChartOwnerSlides:[6,7,8,9,10,11,12,13],
- requiredEmbeddedWorkbookChartOwnerSlides:[6,7,8,9,10,11,12,13],
+  ...[2,3,4,5,6,7,17].flatMap(n=>["--require-native-table-slide",String(n)])],
+ requiredNativeTableOwnerSlides:[2,3,4,5,6,7,17],
+ requiredNativeChartOwnerSlides:[8,9,10,11,12,13,14,15],
+ requiredEmbeddedWorkbookChartOwnerSlides:[8,9,10,11,12,13,14,15],
  fontPolicy:{basis:"design",families:["Arial Unicode MS"]},
  // This host has no load_workspace_dependencies or @oai/artifact-tool runtime.
  // Native structure, font, geometry, arithmetic and workbook checks still run.
  verifyArtifactToolImport:false,
- receiptPath:path.join(workspaceDir,"build/validation.json")
+ receiptPath:process.argv[3] ?? path.join(workspaceDir,"build/validation.json")
 });
 await fs.writeFile(path.join(workspaceDir,"build/runtime_note.json"),JSON.stringify({
  artifact_runtime:"Unavailable: package import failed and runtime loader was not exposed",

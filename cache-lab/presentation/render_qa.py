@@ -62,7 +62,8 @@ for pdf in pdfs:
  subprocess.run(["pdftoppm","-scale-to","1600","-png","-singlefile",str(p),str(p.with_suffix(""))],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
 chart=0
 with ZipFile(BUILD/"candidate.pptx") as z:
- for i in range(1,17):
+ slide_count=len(E.fromstring(z.read("ppt/presentation.xml")).findall("p:sldIdLst/p:sldId",N))
+ for i in range(1,slide_count+1):
   root=E.fromstring(z.read(f"ppt/slides/slide{i}.xml"))
   im=Image.new("RGB",(1280,720),"white");draw=ImageDraw.Draw(im)
   for obj in root.find("p:cSld/p:spTree",N):

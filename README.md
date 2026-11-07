@@ -7,4 +7,4 @@
 - [原始实验数据](cache-lab/results/raw_runs.csv)
 - [图表](cache-lab/figures/)
 
-采用自写 Trace 模拟器，已执行 768 次仿真。[课堂汇报 PPT](cache-lab/presentation/output/Cache映射与替换策略_小组实验.pptx) 已完成，共 16 页，附讲解备注。
+采用自写 Trace 模拟器，已执行 768 次仿真。[课堂汇报 PPT](cache-lab/presentation/output/Cache映射与替换策略_小组实验.pptx) 已完成，共 18 页，含研究动机、应用场景和讲解备注。
