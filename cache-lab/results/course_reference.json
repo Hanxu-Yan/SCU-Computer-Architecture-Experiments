@@ -1,0 +1,13 @@
+{
+  "course_file": "/Users/yhx/Desktop/大三上/计算机系统结构/第5章 存储层次.pptx",
+  "sha256": "263d8661ac263f0533409db91f51c81b6e11447972f5d3e4aab1c2d0885a01d6",
+  "slide_ranges": {
+    "mapping": "13-21",
+    "replacement": "25-27",
+    "write_policy": "29-31",
+    "performance": "36,44-47",
+    "miss_types_and_parameters": "49-55,60"
+  },
+  "reference_url": "https://pages.cs.wisc.edu/~markhill/DineroIV/",
+  "accessed": "2026-11-07"
+}

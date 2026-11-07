@@ -1,0 +1,187 @@
+{
+  "trace_seed": 20261107,
+  "trace_format": "R|W byte_address byte_size",
+  "c_address_model": {
+    "A": "0x100000",
+    "B": "0x200000"
+  },
+  "excluded": "初始化、校验、循环变量、栈、指令取址、编译器额外访存",
+  "workloads": [
+    {
+      "name": "sequential",
+      "label": "顺序扫描",
+      "source": "synthetic",
+      "description": "64 KiB 数组，4 B 步长，重复 4 轮",
+      "file": "sequential.trace.gz",
+      "references": 65536,
+      "reads": 65536,
+      "writes": 0,
+      "unique_64B_blocks": 1024,
+      "sha256": "a1fa22bea37e2a36774038662f1a2f21352a38aaabd966c7a1b945dd35275ef5"
+    },
+    {
+      "name": "small_reuse",
+      "label": "小工作集复用",
+      "source": "synthetic",
+      "description": "2 KiB 数组，4 B 步长，重复 64 轮",
+      "file": "small_reuse.trace.gz",
+      "references": 32768,
+      "reads": 32768,
+      "writes": 0,
+      "unique_64B_blocks": 32,
+      "sha256": "88613adeb3980c17c09d45968d57e34aba5ea93ade02b72a6ab992523f75b7e5"
+    },
+    {
+      "name": "conflict_2",
+      "label": "2 块同组循环",
+      "source": "synthetic",
+      "description": "2 个地址间隔 4096 B，循环 16384 轮",
+      "file": "conflict_2.trace.gz",
+      "references": 32768,
+      "reads": 32768,
+      "writes": 0,
+      "unique_64B_blocks": 2,
+      "sha256": "5bfa193b49e87f2af712d4ff84899cad49e6a5a4da781da2df07a03e2c07cf1f"
+    },
+    {
+      "name": "conflict_8",
+      "label": "8 块同组循环",
+      "source": "synthetic",
+      "description": "8 个地址间隔 4096 B，循环 4096 轮",
+      "file": "conflict_8.trace.gz",
+      "references": 32768,
+      "reads": 32768,
+      "writes": 0,
+      "unique_64B_blocks": 8,
+      "sha256": "b49cb88fd44a21c20af6c15e9908498ef6115a61513efa2d6051fc5ee28aa15d"
+    },
+    {
+      "name": "cycle_5",
+      "label": "5 块同组循环",
+      "source": "synthetic",
+      "description": "5 个地址间隔 4096 B，循环 8192 轮",
+      "file": "cycle_5.trace.gz",
+      "references": 40960,
+      "reads": 40960,
+      "writes": 0,
+      "unique_64B_blocks": 5,
+      "sha256": "d1391a8281846ff2591879193d9abfc8158f2899fe433bc35a628fcfa3693bcb"
+    },
+    {
+      "name": "capacity_cycle",
+      "label": "65 块循环",
+      "source": "synthetic",
+      "description": "连续 65 个 64 B 块，各读 4 B，循环 512 轮",
+      "file": "capacity_cycle.trace.gz",
+      "references": 33280,
+      "reads": 33280,
+      "writes": 0,
+      "unique_64B_blocks": 65,
+      "sha256": "2d771b3070928abbe778cb7e0f16726f07272a84daa338c3660c9ab5fe04d057"
+    },
+    {
+      "name": "hot_cold",
+      "label": "热点混合",
+      "source": "synthetic",
+      "description": "90% 概率访问 48 个热点块，其余访问 976 个冷块；20% 写",
+      "file": "hot_cold.trace.gz",
+      "references": 100000,
+      "reads": 79987,
+      "writes": 20013,
+      "unique_64B_blocks": 1024,
+      "sha256": "4d61168e57988d0caf6ab782d3bd49462f60c068787be24b9471c455106fe53d"
+    },
+    {
+      "name": "uniform_random",
+      "label": "均匀随机",
+      "source": "synthetic",
+      "description": "1024 个块内均匀选择 4 B 字，100000 次只读访问",
+      "file": "uniform_random.trace.gz",
+      "references": 100000,
+      "reads": 100000,
+      "writes": 0,
+      "unique_64B_blocks": 1024,
+      "sha256": "10a3fe957efbbf98b0eb1615230db5d9aef4bea76812fe76ce9868407606c864"
+    },
+    {
+      "name": "row_scan",
+      "label": "按行遍历",
+      "source": "instrumented_C",
+      "description": "128×128 uint32 矩阵，4 轮；仅记录显式数组读写；固定逻辑基址",
+      "kernel_validation": {
+        "kernel": "row_scan",
+        "N": 128,
+        "repeats": 4,
+        "tile": 8,
+        "checksum": 33026284,
+        "validated": true
+      },
+      "file": "row_scan.trace.gz",
+      "references": 65536,
+      "reads": 65536,
+      "writes": 0,
+      "unique_64B_blocks": 1024,
+      "sha256": "ffd9b998de557f4b33cf1a8910f7e33943a780bafb583f184217b5fa5a60b4b6"
+    },
+    {
+      "name": "column_scan",
+      "label": "按列遍历",
+      "source": "instrumented_C",
+      "description": "128×128 uint32 矩阵，4 轮；仅记录显式数组读写；固定逻辑基址",
+      "kernel_validation": {
+        "kernel": "column_scan",
+        "N": 128,
+        "repeats": 4,
+        "tile": 8,
+        "checksum": 33026284,
+        "validated": true
+      },
+      "file": "column_scan.trace.gz",
+      "references": 65536,
+      "reads": 65536,
+      "writes": 0,
+      "unique_64B_blocks": 1024,
+      "sha256": "99016b7a8c94ef8bb49b10401635f276525d3cf2027bbea9d87cd42b262e4b01"
+    },
+    {
+      "name": "transpose_naive",
+      "label": "朴素矩阵转置",
+      "source": "instrumented_C",
+      "description": "128×128 uint32 矩阵，4 轮；仅记录显式数组读写；固定逻辑基址",
+      "kernel_validation": {
+        "kernel": "transpose_naive",
+        "N": 128,
+        "repeats": 4,
+        "tile": 8,
+        "checksum": 8256571,
+        "validated": true
+      },
+      "file": "transpose_naive.trace.gz",
+      "references": 131072,
+      "reads": 65536,
+      "writes": 65536,
+      "unique_64B_blocks": 2048,
+      "sha256": "ca01cf4373d8bc426ce3be0d0dac4d4ee813c4d4c2a818fe132f111921d97376"
+    },
+    {
+      "name": "transpose_tiled",
+      "label": "8×8 分块转置",
+      "source": "instrumented_C",
+      "description": "128×128 uint32 矩阵，4 轮；仅记录显式数组读写；固定逻辑基址",
+      "kernel_validation": {
+        "kernel": "transpose_tiled",
+        "N": 128,
+        "repeats": 4,
+        "tile": 8,
+        "checksum": 8256571,
+        "validated": true
+      },
+      "file": "transpose_tiled.trace.gz",
+      "references": 131072,
+      "reads": 65536,
+      "writes": 65536,
+      "unique_64B_blocks": 2048,
+      "sha256": "c41c19e75586efd9a560d74cb43e5d270c11dd63008ce42d5c7e7876d49d5f01"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+验证执行记录
+日期：2026-11-07
+工作目录：cache-lab
+命令：python3 -m unittest -v test_cache_sim
+
+test_3c_hand_calculation ... ok
+test_address_decomposition ... ok
+test_associativity_is_not_monotone_for_every_trace ... ok
+test_differential_oracle ... ok
+test_direct_conflict ... ok
+test_direct_policy_equivalence ... ok
+test_invalid_config ... ok
+test_lru_fifo_difference ... ok
+test_parser_and_comments ... ok
+test_random_repeatability ... ok
+test_sequential_analytic ... ok
+test_split_access ... ok
+test_two_way_fits ... ok
+test_warmup_preserves_state ... ok
+test_write_allocate_and_dirty_eviction ... ok
+test_write_hit_marks_dirty ... ok
+
+Ran 16 tests in 0.186s
+OK
+
+独立模型交叉验证包含 120 组配置，每组 600 次访问。
+上述为首次测试执行结果的整理记录；结果文件后续完整性检查另见 audit.json。

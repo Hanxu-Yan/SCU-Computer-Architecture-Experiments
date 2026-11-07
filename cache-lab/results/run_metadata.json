@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-07T06:51:19.819339+00:00",
+  "python": "3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "elapsed_simulator_seconds": 34.21504112496041,
+  "runs": 768,
+  "summary_rows": 300,
+  "simulated_line_probes": 54342144,
+  "source_sha256": {
+    "cache_sim.py": "617ce89c148a3796c0d38090c783c8a390f95f75e113bfd8f7b6932a00f6d158",
+    "generate_traces.py": "2193ac9f32ababfe8d145a71dccc59bfb4de50092816249f92f8f40d36f9b9bb",
+    "run_experiments.py": "9253a83cb94ff4e5988ab3c019449283c1c4c508779f242b0e039be2ebd2805b",
+    "test_cache_sim.py": "1f46d68b0593247da0212e8deae3bfd494f5fea5a7fefbf60f600d00b7cb6f3f",
+    "kernels.c": "e81a90b2af88088870a395f8e3225fddea0a4d1b7b741caa19f7466d62e71768"
+  },
+  "note": "elapsed_simulator_seconds is host runtime, not simulated CPU time"
+}

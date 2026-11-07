@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "audited_utc": "2026-11-07T06:58:54.123643+00:00",
+  "raw_runs": 768,
+  "summary_groups": 300,
+  "trace_checksums": 12,
+  "source_checksums": 5,
+  "c_kernel_validations": 4,
+  "cli_replay": "hot_cold / 4096 B / 64 B / 4-way / LRU: identical",
+  "checks": [
+    "counter conservation",
+    "configuration accounting",
+    "3C accounting",
+    "replacement seeds",
+    "summary mean and CI",
+    "source and trace hashes",
+    "direct-mapped policy equivalence",
+    "sequential analytical rate",
+    "CLI replay"
+  ]
+}

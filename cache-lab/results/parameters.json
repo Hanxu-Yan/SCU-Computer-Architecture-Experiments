@@ -1,0 +1,49 @@
+{
+  "main": {
+    "capacity_bytes": 4096,
+    "block_bytes": 64,
+    "ways": [
+      1,
+      2,
+      4,
+      8,
+      64
+    ],
+    "policies": [
+      "LRU",
+      "FIFO",
+      "Random"
+    ]
+  },
+  "random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "capacity_sweep_bytes": [
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "block_sweep_bytes": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "warmup_probes": 4096,
+  "write_policy": "write-back, write-allocate",
+  "prefetch": false,
+  "final_flush": false,
+  "ci": "Student t, df=9, two-sided 95%, across replacement seeds on one fixed trace",
+  "total_runs": 768
+}

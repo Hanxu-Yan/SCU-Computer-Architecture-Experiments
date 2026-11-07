@@ -1,0 +1,181 @@
+﻿中文名称,experiment,workload,capacity_bytes,block_bytes,ways,policy,hit_rate_pct,runs,ci95_half_pp
+顺序扫描,main,sequential,4096,64,1,LRU,93.75,1,0
+顺序扫描,main,sequential,4096,64,1,FIFO,93.75,1,0
+顺序扫描,main,sequential,4096,64,1,Random,93.75,1,0
+顺序扫描,main,sequential,4096,64,2,LRU,93.75,1,0
+顺序扫描,main,sequential,4096,64,2,FIFO,93.75,1,0
+顺序扫描,main,sequential,4096,64,2,Random,93.75,10,0.0
+顺序扫描,main,sequential,4096,64,4,LRU,93.75,1,0
+顺序扫描,main,sequential,4096,64,4,FIFO,93.75,1,0
+顺序扫描,main,sequential,4096,64,4,Random,93.75,10,0.0
+顺序扫描,main,sequential,4096,64,8,LRU,93.75,1,0
+顺序扫描,main,sequential,4096,64,8,FIFO,93.75,1,0
+顺序扫描,main,sequential,4096,64,8,Random,93.75,10,0.0
+顺序扫描,main,sequential,4096,64,64,LRU,93.75,1,0
+顺序扫描,main,sequential,4096,64,64,FIFO,93.75,1,0
+顺序扫描,main,sequential,4096,64,64,Random,93.75,10,0.0
+小工作集复用,main,small_reuse,4096,64,1,LRU,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,1,FIFO,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,1,Random,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,2,LRU,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,2,FIFO,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,2,Random,99.90234375,10,0.0
+小工作集复用,main,small_reuse,4096,64,4,LRU,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,4,FIFO,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,4,Random,99.90234375,10,0.0
+小工作集复用,main,small_reuse,4096,64,8,LRU,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,8,FIFO,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,8,Random,99.90234375,10,0.0
+小工作集复用,main,small_reuse,4096,64,64,LRU,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,64,FIFO,99.90234375,1,0
+小工作集复用,main,small_reuse,4096,64,64,Random,99.90234375,10,0.0
+2 块同组循环,main,conflict_2,4096,64,1,LRU,0.0,1,0
+2 块同组循环,main,conflict_2,4096,64,1,FIFO,0.0,1,0
+2 块同组循环,main,conflict_2,4096,64,1,Random,0.0,1,0
+2 块同组循环,main,conflict_2,4096,64,2,LRU,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,2,FIFO,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,2,Random,99.993896484375,10,0.0
+2 块同组循环,main,conflict_2,4096,64,4,LRU,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,4,FIFO,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,4,Random,99.993896484375,10,0.0
+2 块同组循环,main,conflict_2,4096,64,8,LRU,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,8,FIFO,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,8,Random,99.993896484375,10,0.0
+2 块同组循环,main,conflict_2,4096,64,64,LRU,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,64,FIFO,99.993896484375,1,0
+2 块同组循环,main,conflict_2,4096,64,64,Random,99.993896484375,10,0.0
+8 块同组循环,main,conflict_8,4096,64,1,LRU,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,1,FIFO,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,1,Random,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,2,LRU,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,2,FIFO,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,2,Random,0.77789306640625,10,0.03940943533304131
+8 块同组循环,main,conflict_8,4096,64,4,LRU,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,4,FIFO,0.0,1,0
+8 块同组循环,main,conflict_8,4096,64,4,Random,17.6715087890625,10,0.0991284800757047
+8 块同组循环,main,conflict_8,4096,64,8,LRU,99.9755859375,1,0
+8 块同组循环,main,conflict_8,4096,64,8,FIFO,99.9755859375,1,0
+8 块同组循环,main,conflict_8,4096,64,8,Random,99.9755859375,10,0.0
+8 块同组循环,main,conflict_8,4096,64,64,LRU,99.9755859375,1,0
+8 块同组循环,main,conflict_8,4096,64,64,FIFO,99.9755859375,1,0
+8 块同组循环,main,conflict_8,4096,64,64,Random,99.9755859375,10,0.0
+5 块同组循环,main,cycle_5,4096,64,1,LRU,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,1,FIFO,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,1,Random,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,2,LRU,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,2,FIFO,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,2,Random,6.646240234375,10,0.053886978726943736
+5 块同组循环,main,cycle_5,4096,64,4,LRU,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,4,FIFO,0.0,1,0
+5 块同组循环,main,cycle_5,4096,64,4,Random,59.99755859375,10,0.10978597729623377
+5 块同组循环,main,cycle_5,4096,64,8,LRU,99.98779296875,1,0
+5 块同组循环,main,cycle_5,4096,64,8,FIFO,99.98779296875,1,0
+5 块同组循环,main,cycle_5,4096,64,8,Random,99.98779296875,10,0.0
+5 块同组循环,main,cycle_5,4096,64,64,LRU,99.98779296875,1,0
+5 块同组循环,main,cycle_5,4096,64,64,FIFO,99.98779296875,1,0
+5 块同组循环,main,cycle_5,4096,64,64,Random,99.98779296875,10,0.0
+65 块循环,main,capacity_cycle,4096,64,1,LRU,96.73377403846153,1,0
+65 块循环,main,capacity_cycle,4096,64,1,FIFO,96.73377403846153,1,0
+65 块循环,main,capacity_cycle,4096,64,1,Random,96.73377403846153,1,0
+65 块循环,main,capacity_cycle,4096,64,2,LRU,95.1983173076923,1,0
+65 块循环,main,capacity_cycle,4096,64,2,FIFO,95.1983173076923,1,0
+65 块循环,main,capacity_cycle,4096,64,2,Random,96.73948317307692,10,0.02489165915256328
+65 块循环,main,capacity_cycle,4096,64,4,LRU,92.12740384615384,1,0
+65 块循环,main,capacity_cycle,4096,64,4,FIFO,92.12740384615384,1,0
+65 块循环,main,capacity_cycle,4096,64,4,Random,96.73407451923077,10,0.020048013603634986
+65 块循环,main,capacity_cycle,4096,64,8,LRU,85.98557692307692,1,0
+65 块循环,main,capacity_cycle,4096,64,8,FIFO,85.98557692307692,1,0
+65 块循环,main,capacity_cycle,4096,64,8,Random,96.73407451923077,10,0.041314975141658175
+65 块循环,main,capacity_cycle,4096,64,64,LRU,0.0,1,0
+65 块循环,main,capacity_cycle,4096,64,64,FIFO,0.0,1,0
+65 块循环,main,capacity_cycle,4096,64,64,Random,96.76412259615384,10,0.035802947071800074
+热点混合,main,hot_cold,4096,64,1,LRU,83.494,1,0
+热点混合,main,hot_cold,4096,64,1,FIFO,83.494,1,0
+热点混合,main,hot_cold,4096,64,1,Random,83.494,1,0
+热点混合,main,hot_cold,4096,64,2,LRU,83.44500000000001,1,0
+热点混合,main,hot_cold,4096,64,2,FIFO,80.247,1,0
+热点混合,main,hot_cold,4096,64,2,Random,80.2688,10,0.05977576411694704
+热点混合,main,hot_cold,4096,64,4,LRU,86.09599999999999,1,0
+热点混合,main,hot_cold,4096,64,4,FIFO,78.725,1,0
+热点混合,main,hot_cold,4096,64,4,Random,78.7612,10,0.06567341771236636
+热点混合,main,hot_cold,4096,64,8,LRU,86.337,1,0
+热点混合,main,hot_cold,4096,64,8,FIFO,76.68,1,0
+热点混合,main,hot_cold,4096,64,8,Random,76.6815,10,0.0951279749907043
+热点混合,main,hot_cold,4096,64,64,LRU,86.964,1,0
+热点混合,main,hot_cold,4096,64,64,FIFO,74.857,1,0
+热点混合,main,hot_cold,4096,64,64,Random,74.9072,10,0.08868104907736314
+均匀随机,main,uniform_random,4096,64,1,LRU,6.115,1,0
+均匀随机,main,uniform_random,4096,64,1,FIFO,6.115,1,0
+均匀随机,main,uniform_random,4096,64,1,Random,6.115,1,0
+均匀随机,main,uniform_random,4096,64,2,LRU,6.1080000000000005,1,0
+均匀随机,main,uniform_random,4096,64,2,FIFO,6.1240000000000006,1,0
+均匀随机,main,uniform_random,4096,64,2,Random,6.1561,10,0.039376338434059986
+均匀随机,main,uniform_random,4096,64,4,LRU,6.162999999999999,1,0
+均匀随机,main,uniform_random,4096,64,4,FIFO,6.162999999999999,1,0
+均匀随机,main,uniform_random,4096,64,4,Random,6.136,10,0.024499160913272228
+均匀随机,main,uniform_random,4096,64,8,LRU,6.095,1,0
+均匀随机,main,uniform_random,4096,64,8,FIFO,6.1080000000000005,1,0
+均匀随机,main,uniform_random,4096,64,8,Random,6.1133,10,0.03260271744912632
+均匀随机,main,uniform_random,4096,64,64,LRU,6.1690000000000005,1,0
+均匀随机,main,uniform_random,4096,64,64,FIFO,6.167,1,0
+均匀随机,main,uniform_random,4096,64,64,Random,6.1572,10,0.02684214679094664
+按行遍历,main,row_scan,4096,64,1,LRU,93.75,1,0
+按行遍历,main,row_scan,4096,64,1,FIFO,93.75,1,0
+按行遍历,main,row_scan,4096,64,1,Random,93.75,1,0
+按行遍历,main,row_scan,4096,64,2,LRU,93.75,1,0
+按行遍历,main,row_scan,4096,64,2,FIFO,93.75,1,0
+按行遍历,main,row_scan,4096,64,2,Random,93.75,10,0.0
+按行遍历,main,row_scan,4096,64,4,LRU,93.75,1,0
+按行遍历,main,row_scan,4096,64,4,FIFO,93.75,1,0
+按行遍历,main,row_scan,4096,64,4,Random,93.75,10,0.0
+按行遍历,main,row_scan,4096,64,8,LRU,93.75,1,0
+按行遍历,main,row_scan,4096,64,8,FIFO,93.75,1,0
+按行遍历,main,row_scan,4096,64,8,Random,93.75,10,0.0
+按行遍历,main,row_scan,4096,64,64,LRU,93.75,1,0
+按行遍历,main,row_scan,4096,64,64,FIFO,93.75,1,0
+按行遍历,main,row_scan,4096,64,64,Random,93.75,10,0.0
+按列遍历,main,column_scan,4096,64,1,LRU,0.0,1,0
+按列遍历,main,column_scan,4096,64,1,FIFO,0.0,1,0
+按列遍历,main,column_scan,4096,64,1,Random,0.0,1,0
+按列遍历,main,column_scan,4096,64,2,LRU,0.0,1,0
+按列遍历,main,column_scan,4096,64,2,FIFO,0.0,1,0
+按列遍历,main,column_scan,4096,64,2,Random,0.0,10,0.0
+按列遍历,main,column_scan,4096,64,4,LRU,0.0,1,0
+按列遍历,main,column_scan,4096,64,4,FIFO,0.0,1,0
+按列遍历,main,column_scan,4096,64,4,Random,0.0,10,0.0
+按列遍历,main,column_scan,4096,64,8,LRU,0.0,1,0
+按列遍历,main,column_scan,4096,64,8,FIFO,0.0,1,0
+按列遍历,main,column_scan,4096,64,8,Random,0.0,10,0.0
+按列遍历,main,column_scan,4096,64,64,LRU,0.0,1,0
+按列遍历,main,column_scan,4096,64,64,FIFO,0.0,1,0
+按列遍历,main,column_scan,4096,64,64,Random,18.548583984375,10,0.0924435127944901
+朴素矩阵转置,main,transpose_naive,4096,64,1,LRU,46.142578125,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,1,FIFO,46.142578125,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,1,Random,46.142578125,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,2,LRU,46.875,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,2,FIFO,46.19140625,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,2,Random,46.146697998046875,10,0.010769571625239414
+朴素矩阵转置,main,transpose_naive,4096,64,4,LRU,46.875,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,4,FIFO,46.2890625,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,4,Random,46.15837097167969,10,0.008111678058940327
+朴素矩阵转置,main,transpose_naive,4096,64,8,LRU,46.875,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,8,FIFO,46.484375,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,8,Random,46.15089416503906,10,0.013379690557136165
+朴素矩阵转置,main,transpose_naive,4096,64,64,LRU,46.875,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,64,FIFO,46.875,1,0
+朴素矩阵转置,main,transpose_naive,4096,64,64,Random,53.6236572265625,10,0.06136672618826701
+8×8 分块转置,main,transpose_tiled,4096,64,1,LRU,88.18359375,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,1,FIFO,88.18359375,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,1,Random,88.18359375,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,2,LRU,87.59765625,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,2,FIFO,87.109375,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,2,Random,83.62113952636719,10,0.07571933323274413
+8×8 分块转置,main,transpose_tiled,4096,64,4,LRU,85.05859375,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,4,FIFO,85.546875,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,4,Random,79.8583984375,10,0.10595702538019748
+8×8 分块转置,main,transpose_tiled,4096,64,8,LRU,84.765625,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,8,FIFO,84.765625,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,8,Random,77.40043640136719,10,0.12256297482082011
+8×8 分块转置,main,transpose_tiled,4096,64,64,LRU,90.625,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,64,FIFO,90.625,1,0
+8×8 分块转置,main,transpose_tiled,4096,64,64,Random,89.29679870605469,10,0.022196971717633796
